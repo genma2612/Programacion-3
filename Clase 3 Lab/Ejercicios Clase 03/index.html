@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <title>Ejercicio 21</title>
+          <script src="main_tabla.js" ></script>
+        </head>
+<body>
+        <form id="frmEmpleado" action "admin.php" method="POST">
+        <table>
+                <tr>
+                    <td>
+                    NOMBRE:
+                    </td>
+                    <td>
+                        <input type="text" id="txtNombre" value="" /> 
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            APELLIDO:
+                            </td>
+                            <td>
+                                <input type="text" id="txtApellido" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                DNI:
+                            </td>
+                            <td>
+                                <input type="text" id="txtDni" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                SEXO:
+                            </td>
+                            <td>
+                                    <select id="cboSexo" name="cboSexo">
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Femenino" >Femenino</option>
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                LEGAJO:
+                            </td>
+                            <td>
+                                <input type="text" id="txtLegajo" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                SUELDO:
+                            </td>
+                            <td>
+                                <input type="text" id="txtSueldo" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td align="center">
+                                <input type="button" onclick="GenerarEmpleado()" value="Aceptar" /> 
+                        </td>
+                        <td align="center">
+                                <input type="reset" value="Limpiar" /> 
+                        </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
