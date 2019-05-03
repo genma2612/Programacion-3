@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <title>Ejercicio</title>
+          <script src="main_tabla.js" ></script>
+        </head>
+<body>
+        <form action="admin.php" method="post" enctype="multipart/form-data">
+        <table>
+                <tr>
+                    <td>
+                    NOMBRE:
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre" value="" /> 
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            APELLIDO:
+                            </td>
+                            <td>
+                                <input type="text" name="apellido" id="apellido" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                LEGAJO:
+                            </td>
+                            <td>
+                                <input type="text" name="legajo" id="legajo" value="" /> 
+                            </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                FOTO:
+                            </td>
+                            <td>
+                                <input type="file" name="foto" id="foto">
+                            </td>
+
+                </tr>
+                <tr>
+                        <td align="center">
+                                <input type="submit" value="Subir Empleado">
+                        </td>
+                        <td align="center">
+                                <input type="reset" value="Limpiar" /> 
+                        </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>

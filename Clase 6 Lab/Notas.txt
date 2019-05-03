@@ -1,0 +1,2 @@
+nueva columna acciones, eliminar, modificar
+eliminar(empleado)
