@@ -1,7 +1,8 @@
 <?php
 require_once('./clases/IParte1.php');
+require_once('./clases/IParte2.php');
 require_once('./clases/AccesoDatos.php');
-class Juguete implements IParte1
+class Juguete implements IParte1, IParte2
 {
     private $tipo;
     private $precio;
@@ -95,5 +96,27 @@ class Juguete implements IParte1
             $retorno .= $tempString . "<br>";
         }
         echo $retorno;
+    }
+
+    public function Modificar()
+    {
+        $retorno = false;
+        if(!$this->Verificar(Juguete::Traer()))
+        {
+            try{
+                $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+                $consulta =$objetoAccesoDato->RetornarConsulta("UPDATE juguetes SET precio = :precio, foto = :foto WHERE tipo = :tipo AND pais = :pais"); 
+                $consulta->bindValue(':tipo', $this->tipo, PDO::PARAM_STR);
+                $consulta->bindValue(':pais', $this->paisOrigen, PDO::PARAM_STR);
+                $consulta->bindValue(':precio', $this->precio, PDO::PARAM_STR);
+                $consulta->bindValue(':foto', $this->pathImagen, PDO::PARAM_STR);
+                $consulta->execute();
+                $retorno = true;
+            }
+            catch (PDOException $e)
+            {
+            }
+        }
+        return $retorno;
     }
 }

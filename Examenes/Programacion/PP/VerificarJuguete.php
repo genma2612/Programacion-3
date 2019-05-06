@@ -5,7 +5,7 @@ if(isset($_GET['tipo']) && isset($_GET['paisOrigen']))
     $tipo = $_GET['tipo'];
     $pais = $_GET['paisOrigen'];
     $juguetes = Juguete::Traer();
-    $jugueteEncontrado;
+    $jugueteEncontrado = null;
     $flagTipo = false;
     $flagPais = false;
     $estado = 0;
@@ -23,7 +23,7 @@ if(isset($_GET['tipo']) && isset($_GET['paisOrigen']))
             }
         }
     }
-    if($flagPais == true && $flagTipo == true){
+    if($jugueteEncontrado != null){
         echo $jugueteEncontrado->ToString() . " Precio con IVA: $" . $jugueteEncontrado->CalcularIVA();
     }
     else{
