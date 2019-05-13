@@ -1,0 +1,6 @@
+{
+	"require":{
+		"slim/slim": "^3.0"
+	}
+}
+//Que cosas requiere que se instale a partir del composer
