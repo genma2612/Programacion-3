@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+th{
+    background-color: blue;
+    color: white;
+    font-size: 20pt;
+}
+span{
+    font-family: monospace;
+}
+table{
+    background-color: rgb(18, 235, 18);
+    /* align: "center";*/
+    width: 40%;
+}
+input[type= "text"]{
+    width: 99%;
+}
+input[type="submit"]{ /* con [type="submit"] especifico que tipo, sino se aplica a todos los inputs */
+    width: 100%;
+}
+input[type="reset"]{
+    width: 100%;
+}
+.aceptar{
+    background-color: darkgreen;
+    color: white;
+}
+.cancelar{
+    background-color: red;
+    color: white;
+}
