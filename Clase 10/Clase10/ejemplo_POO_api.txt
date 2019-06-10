@@ -1,0 +1,10 @@
+$app->group('/usuarios', function () {
+
+
+	$this->post('/alta', \usuarios::class . ':AltaUsuario');
+
+	...
+
+	...
+
+}

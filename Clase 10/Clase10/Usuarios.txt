@@ -1,0 +1,6 @@
+1 - admin - Jose 
+2 - admin - Manuel 
+3 - admin - Lucas 
+4 - user - german 
+6 - user - rogelio 
+7 - admin - Lidia 

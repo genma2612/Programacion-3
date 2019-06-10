@@ -1,0 +1,11 @@
+Grupo: /opciones -> alta, Verificar, TraerTodos, TraerUno, Eliminar (legajo), Modificar(legajo +Json)
+
+(post) Alta -> Json (user) + foto (./fotos/YYYmmdd_legajo) -> tabla usuarios
+				-> exito, mensaje, status (json)	$request->getUploadesFiles() //retorna array de archivos subidos
+															->getClientFileName()
+															->MoveTo()
+
+Eliminar -> ./fotos/eliminadas
+Modificar -> ./fotos/modificadas
+															
+todos los mètodos retornan un json con exito y mensaje (traer todos retorna un array de json)
