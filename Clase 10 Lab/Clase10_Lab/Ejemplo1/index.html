@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../librerias/css/bootstrapValidator.css"/>
+
+    <script type="text/javascript" src="../librerias/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../librerias/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../librerias/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+
+    <title>Ejemplo 1</title>
+</head>
+<body>
+        <div class="container">
+                <div Class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <form role="form" id="idForm" action="./BACKEND/index.php" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md -12 text-center"><h4>EJEMPLO 1</h4></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">Usuario:</div>
+                                    <div class="col-md-9"><input class="form-control" type="text" name="usuario" id="legajo" value=""/></div>
+                                </div>
+                                </br>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">Password:</div>
+                                    <div class="col-md-9"><input class="form-control" type="password" name="clave" id="clave" value=""/></div>
+                                </div>
+                                </br>
+                                <div class="row">
+                                    <div class="col-md-4 btn-group">
+                                        <input class="btn btn-primary form-control" type="submit" value="Aceptar" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+        </div> 
+</body>
+</html>
