@@ -1,0 +1,9 @@
+localStorage.SetItem("",jwt) -> redirigir pagina hacia principal.php
+			.getItem("nombre")
+
+$.ajax(...
+
+headers:("nombre":"valor"} (jwt pasado como contenido del header)
+			
+			
+			$request->getHeader("nombre") ---------> ["nombre"]=>"valor"

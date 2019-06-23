@@ -8,7 +8,7 @@
 
         </head>
         <body>
-            <div class="container">
+            <div class="container-fluid">
                 <div Class="row">
                     <div class="col-4"></div>
                     <div class="col-4">
